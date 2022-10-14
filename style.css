@@ -1,0 +1,79 @@
+
+*{
+    font-family:calibri;
+}
+body{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    justify-content:center;
+}
+.game-board{
+    margin-top:50px;
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius:5px;
+    background-color: transparent;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    display:flex;
+    justify-content:space-between;
+}
+.playGround{
+    min-height:300px;
+    width: 100%;
+    background-color: #553d67;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.player{
+    padding:20px 40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+}
+.player-name{
+    padding:2px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius:5px;
+    text-transform: uppercase;
+    text-align:center;
+}
+.result{
+    padding:10px;
+}
+.board{
+    display:grid;
+    grid-template-columns: repeat(3,70px);
+    grid-template-rows: repeat(3,70px);
+    border-color:transparent;
+}
+.board *{
+    background-color:transparent;
+    border:2px solid transparent;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.a{
+    border-bottom-color:#203647 ;
+}
+.b{
+    border-bottom-color:#203647;
+}
+.c1{
+    border-right-color: #203647;
+}
+.c2{
+    border-right-color: #203647;
+}
+.play{
+    font-weight:bold;
+    font-size:25px;
+    font-family:cursive ;
+}
